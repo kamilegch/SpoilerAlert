@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>SpoilerAlert</title>
+    <style>
+        body {
+            margin: 0; 
+            padding: 20px;
+            background-color: rgb(59, 5, 5);
+            color: wheat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            color: pink;
+            margin-bottom: 10px;
+        }
+
+        .mellom-bilde {
+            width: 1000px;           
+            height: auto;          
+            margin: 20px 0;         
+            display: block;        
+            margin-left: auto;    
+            margin-right: auto;    
+        }
+
+        .tagline {
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 209, 217);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        h2, h3, p{
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        table {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border-collapse: collapse;
+            margin-top: 20px;
+            max-width: 100%; 
+        }
+
+        th {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 15px 25px;
+        }
+        
+        td {
+            padding: 10px 25px;
+        }
+
+        table, th, td {
+            border: 2px groove pink;
+        }
+                /* NYTT: Container for bilde og tekst side ved side */
+        .film-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+            margin: 30px 0;
+            max-width: 900px;
+            flex-wrap: wrap;
+        }
+
+        .film-bilde img {
+            width: 280px;
+            height: auto;
+            border: 2px solid wheat;
+        }
+
+        .film-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border: 1px groove wheat;
+        }
+
+        .film-info h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            color: pink;
+            margin-bottom: 5px;
+        }
+
+        .film-info .original-tittel {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: rgb(255, 209, 217);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .film-info p {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .trailer-link {
+            display: inline-block;
+            background-color: rgb(91, 39, 3);
+            color: wheat;
+            padding: 8px 20px;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 16px;
+            border: 1px groove wheat;
+            margin-top: 10px;
+        }
+
+        .trailer-link:hover {
+            background-color: wheat;
+        }
+
+        .film-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .varighet {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 14px;
+            color: rgb(255, 209, 217);
+        }
+    </style>
+</head>
+<body>
+    <div class="boks">
+        <h1>Spoiler Alert</h1>
+    </div>
+
+    <img src="SAbilder/SAlogo.jpg" alt="Beskrivelse" class="mellom-bilde">
+    
+    <p><span class="tagline">Film, folk og gode samtaler</span></p>
+    
+    <h2>MÅNEDS TEMA</h2>
+    <p>"Wierd girl" movies</p>
+    
+    <h3>Ukens film</h3>
+
+     <div class="film-container">
+        <div class="film-bilde">
+            <!-- Bytt ut "bilder/piano-teacher.jpg" med stien til ditt bilde -->
+            <img src="SAbilder/ThePianoTeacher.jpg" alt="The Piano Teacher">
+        </div>
+        <div class="film-info">
+            <h4>The Piano Teacher</h4>
+            <p class="original-tittel">La Pianiste</p>
+            <p><strong>2001</strong> · Directed by <strong>Michael Haneke</strong></p>
+            <p>Erika Kohut, a sexually repressed piano teacher living with her domineering mother, meets a young man who starts romantically pursuing her.</p>
+            
+            <div class="film-footer">
+                <!-- Link til trailer eller annen side -->
+                <a href="https://www.youtube.com/watch?v=NhYEh7V7HTw" target="_blank" class="trailer-link">
+                    ▶ TRAILER
+                </a>
+                <span class="varighet">131 mins</span>
+            </div>
+        </div>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>UKE</th>
+                <th>FILM</th>
+                <th>WHERE TO WATCH</th>
+                <th>GRUPPE RATING</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>36</td><td>The piano teacher</td><td>YouTube</td><td>...</td></tr>
+            <tr><td>37</td><td>Secretary</td><td>...</td><td>...</td></tr>
+            <tr><td>38</td><td>Welcome to the dollhouse</td><td>...</td><td>...</td></tr>
+            <tr><td>39</td><td>Pearl</td><td>...</td><td>...</td></tr>
+            <tr><td>40</td><td>Dinner in america</td><td>...</td><td>...</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
