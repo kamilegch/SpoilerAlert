@@ -68,7 +68,14 @@
         table, th, td {
             border: 2px groove pink;
         }
-                /* NYTT: Container for bilde og tekst side ved side */
+        .tabell-bilde {
+            width: 60px;
+            height: auto;         
+            vertical-align: middle;
+            margin-right: 10px;  
+            border-radius: 4px;   
+            display: inline-block; 
+        }
         .film-container {
             display: flex;
             flex-direction: row;
@@ -190,7 +197,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>36</td><td>The piano teacher</td><td>YouTube</td><td>...</td></tr>
+            <tr><td>36</td><td><img src="SAbilder/ThePianoTeacher.jpg" alt="The Piano Teacher" class="tabell-bilde">The Piano Teacher</td><td>YouTube</td><td>...</td></tr>
             <tr><td>37</td><td>The diary of a teenage girl</td><td>Netflix</td><td>...</td></tr>
             <tr><td>38</td><td>Welcome to the dollhouse</td><td>...</td><td>...</td></tr>
             <tr><td>39</td><td>Pearl</td><td>YouTube</td><td>...</td></tr>
